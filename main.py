@@ -1,4 +1,6 @@
 import requests
+from send_mail import send_mail
+
 
 
 api_key = "fc178f995abc40909f0ccccea075f732"
@@ -13,9 +15,15 @@ request=requests.get(url)
 content=request.json()
 
 
+message = ""                                                                         #message should be str bcz only string type is sent via mail
 # Access the article titles and description
 for article in content["articles"]:
-    print(article['title'])
-    print(article['description'])
+    if article['title'] is not None:
+        message=message+article['title']+"\n"+article['description']+"2*\n"
+
+
+message=message.encode("utf-8")
+
+send_mail(message)
 
 
