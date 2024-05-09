@@ -5,7 +5,7 @@ def send_mail(message):
     global username, password, host, port
 
     username = "pythonwebapp2023@gmail.com"
-    password = "4567ujbcr5678ujhe678----"
+    password = "4567ujbcr5678ujhe678-----"
 
     receiver = "pythonwebapp2023@gmail.com"
     host = "smtp.gmail.com"
