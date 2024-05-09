@@ -3,6 +3,7 @@ from send_mail import send_mail
 
 
 
+
 api_key = "enter api_key"
 url = "https://newsapi.org/v2/everything?q=tesla&" \
       "from=2023-07-22&sortBy=publishedAt&" \
