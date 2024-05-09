@@ -1,5 +1,5 @@
 import requests
-from send_mail import send_mail
+
 
 
 
@@ -25,6 +25,6 @@ for article in content["articles"]:
 
 message=message.encode("utf-8")
 
-send_mail(message)
+
 
 
